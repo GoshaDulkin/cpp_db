@@ -19,6 +19,8 @@ public:
 
 private:
     vector<Row> rows;
+    int curr_id = 1;
+
 };
 
 #endif

@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
     cout << "Welcome to cpp_db. Type 'exit' to quit\n";
+    cout << "Valid commands are 'insert' and 'select'\n";
 
     string input;
     Database db;
@@ -22,7 +23,7 @@ int main() {
         } else if (input.substr(0, 6) == "select") {
             db.do_select(input);
         } else {
-            cout << "Invalid command, please try again\n";
+            cout << "Valid commands are 'insert' and 'select', please try again\n";
         }
     }
 
